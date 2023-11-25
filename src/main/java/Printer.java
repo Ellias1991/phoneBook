@@ -16,7 +16,15 @@ public class Printer {
             phone1 = Integer.parseInt(args[2]);
             phone2 = Integer.parseInt(args[3]);
         }
+        PhoneBook myPhoneBook = new PhoneBook();
+        myPhoneBook.add(name1, phone1);
+        myPhoneBook.add(name1, phone2);
+        myPhoneBook.add(name2, phone2);
 
+        System.out.println(myPhoneBook.find(name1));
+        System.out.println(PhoneBook.getPhoneBook());
+        System.out.println(myPhoneBook.find("Me"));
     }
-}
+    }
+
 
